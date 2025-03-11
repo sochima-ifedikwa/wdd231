@@ -8,26 +8,31 @@
     <meta name="author" content="Sochima Ifedikwa">
     <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/smalls.css">
+    <link rel="stylesheet" href="styles/large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
     
 </head>
 <body>
     <header>
-        <img src="images/profile.webp" alt="A headshot of Sochima Ifedikwa" height="100"> 
-        <h1><span>Sochima Ifedikwa</span></h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#chamber">Chamber</a>
-            <a href="https://github.com/sochima-ifedikwa">GitHub Profile</a>
-            <a href="https://www.linkedin.com/in/sochima-ifedikwa/">Linkedin</a>
-        </nav>
+        <img src="images/profile.webp" alt="A headshot of Sochima Ifedikwa" height="100">
+        <h1>Sochima Ifedikwa</h1>
+        <a id="menu" href="#"></a>
     </header>
+    <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="#chamber">Chamber</a>
+        <a href="https://github.com/sochima-ifedikwa">GitHub Profile</a>
+        <a href="https://www.linkedin.com/in/sochima-ifedikwa/">Linkedin</a>
+    </nav>
     <main>
         <h1>Home</h1>
-        <section id="course-work">
+        <section class="course-work">
             <h2>Course Work</h2>
             <ul>
                 <li>WDD 130 - Web Development I</li>
@@ -35,10 +40,10 @@
                 <li></li>
             </ul>
         </section>
-        <section id="my-city">
+        <section class="my-city">
             <h2>Lubbock, Texas</h2>
         </section>
-        <section id="certificate-courses">
+        <section class="certificate-courses">
             <h2>Web and Computer Programming Certificate</h2>
             <div class="selection-menu">
                 <button>All</button>
@@ -56,9 +61,8 @@
         </section>
     </main>
     <footer>
-        <p>&copy;<span id="currentyear"></span> Sochima Ifedikwa, Texas</p>
+        <p>&copy;<span id="currentYear"></span> Sochima Ifedikwa, Texas</p>
         <p id="lastModified"></p>
-
     </footer>
 </body>
 </html>
