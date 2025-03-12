@@ -10,13 +10,15 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+
+
 }
 
-header, nav, main, footer {
-    max-width: 950px;
-    margin: 0 auto;
-}
+/* header, nav, main, footer {
+    margin: 1rem auto;
+} */
 
 header {
     display: grid;
@@ -27,6 +29,13 @@ header {
 
 header img {
     padding: px;
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    text-decoration: none;
+    background-color: var(--background-color  );
 }
 nav {
     background-color: black;
