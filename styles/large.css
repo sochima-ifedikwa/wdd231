@@ -6,7 +6,6 @@
 
     body {
         min-height: 100vh;
-        position: relative;
     }
 
     header, nav, main, footer {
@@ -69,6 +68,11 @@
         color: white;
         text-align: center;
         /* padding: 5px; */
+    }
+
+    #course-work ul {
+        text-align: left;
+        padding: 1rem;
     }
 
     .my-city {
