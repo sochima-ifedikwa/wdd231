@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header, main, footer {
+    margin: 1rem;
+}
+
+
+h1 {
+    color: blue;
+    text-align: center;
+
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+}
+
+footer {
+    text-align: center;
+    background-color: slategrey;
+}
