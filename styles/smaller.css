@@ -1,0 +1,109 @@
+:root {
+    --background-color: #8acaff;
+    --text-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+header {
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-evenly
+}
+
+header h1 {
+    color: white;
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    text-decoration: none;
+    border: 0;
+    background: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    background-color: black;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+.open a{
+    display: block;
+}
+
+h1 {
+    color: blue;
+    margin: 1rem;
+}
+
+section {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.section h2 {
+    text-align: left;
+}
+.certificate-courses {
+    display: flex;
+    flex-direction: column;
+
+}
+.selection-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding: 10px;
+}
+
+.courses{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.courses button {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+}
+footer{
+    background-color: var(--background-color);
+    text-align: center;
+}
