@@ -19,18 +19,58 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="larger.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
-    <script src="scripts/directory.js" defer></script> 
+    <script src="scripts/members.js" defer></script> 
+    <script src="scripts/navigation.js" defer></script>
     <link rel="icon" href="favicon.ico">
     
 </head>
 <body>
     <header>
-        <h1>Timbuktu Chamber of Commerce</h1>
+        <img src="images/logo.webp" alt="Timbuktu" width="70" height="59" >
+        <div>
+            <span>Timbuktu</span>
+            <div>Chamber of Commerce</div>
+        </div>
+        <button id="hamburger" aria-label="hamburger"></button>
     </header>
-    <main></main>
-    <footer></footer>
+    <nav id="navbar">
+        <ul class="menuLinks">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Directory</h1>
+        <div class="theButtons">
+            <button id="btnGrid" class="active">Grid</button>
+            <button id="btnList" class="">List</button>
+        </div>
+        <div id="members" class="grid"></div>
+    </main>
+    <footer>
+        <section class="address">
+            <p>Timbuktu Chamber of Commerce</p>
+            <p>10 Rue De La Paix</p>
+            <p>Timbuktu, Mali 99</p>
+            <p>info@timbuktucc.org</p>
+            <p>(223) 555-2300</p>
+        </section>
+        <section class="social">
+            <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="facebook" width="25" height="54"></a>
+            <a href="https://twitter.com"><img src="images/twitter.svg" alt="facebook" width="54" height="44"></a>
+            <a href="#"><img src="images/linked-in.svg" alt="facebook" width="44" height="44"></a>
+        </section>
+        <section>
+            <p>WDD231 Class Project</p>
+            <p>Sochima Ifedikwa</p>
+            <p>&copy;<span id="currentYear"></span> Timbuktu Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </section>
+    </footer>
 </body>
 </html>

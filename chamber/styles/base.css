@@ -1,0 +1,167 @@
+:root {
+    --primary-color: #E3B505;
+    --secondary-color: #F0E68C;
+    --background-color: #399cfe;
+    --text-color: black;
+    --font-family: "Roboto", "Opens Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, main, nav, footer {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 80px auto 44px;
+    align-items: end;
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border-bottom: 1px solid black;
+}
+
+header img {
+    display: block;
+    padding: 16px 10px;
+}
+
+header span:first-child {
+    font-size: 2rem;
+}
+header span:nth-child(2) {
+    font-size: 1rem;
+}
+
+
+nav {
+    background-color: var(--background-color);
+}
+
+#hamburger::before {
+    content: "\2630"; /* Unicode character for a hamburger menu */
+}
+
+#hamburger {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: 0.25rem 2vw;
+}
+
+ul.menuLinks li a {
+
+    display: block;
+    padding: 0.75rem 2vw;
+    color: var(--text-color);
+    text-decoration: none;
+    /* font-size: 2rem; */
+}
+
+ul.menuLinks li.active a {
+    background-color: white;
+}
+
+ul.menuLinks {
+    list-style-type: none; /* This can also be set as list-style: none; */
+}
+
+#hamburger.open::before{
+    content: "x" ;
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul{
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+footer {
+    background-color: var(--background-color);
+    display: block;
+}
+
+footer section {
+    padding: 2rem 10px;
+}
+footer section.social {
+    display: flex;
+    justify-content: center
+}
+
+footer img {
+    width: auto;
+    height: 44px;
+    margin: 0 10px;
+}
+footer p {
+    margin: .25rem;
+}
+
+div.theButtons {width: 100%; text-align: center;}
+div.theButtons button.active {background-color: #f27d80;}
+div.theButtons button {
+  margin: 0 1rem; 
+  padding: .7rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #666;
+}
+div#members {
+  margin: 0 2vw;
+}
+/*GRID layout here*/
+div.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap:8px;
+  justify-content: center;
+  
+}
+div.grid section {
+  text-align: center;
+  margin: 1rem 0;
+  border: solid 1px #aaa;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+div.grid img:first-child {width: 100%; height: auto;}
+div.grid h3 {margin: .2rem 0;}
+div.grid p {margin: .2rem 0;}
+
+/*LIST layout here*/
+div.list section {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  align-items: center;
+  margin: .5rem 0;
+  padding: 5px;
+  border: solid 1px #aaa;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+div.list img:first-child {
+    display: none;
+}
