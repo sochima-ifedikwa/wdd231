@@ -17,6 +17,10 @@ header, main, nav, footer {
     margin: 0 auto;
 }
 
+body {
+    font-family: 'Open Sans', 'Roboto', sans-serif;
+}
+
 header {
     display: grid;
     grid-template-columns: 80px auto 44px;
@@ -117,8 +121,15 @@ footer p {
     margin: .25rem;
 }
 
-div.theButtons {width: 100%; text-align: center;}
-div.theButtons button.active {background-color: #f27d80;}
+div.theButtons {
+    width: 100%; 
+    text-align: center;
+}
+
+div.theButtons button.active {
+    background-color: var(--background-color)
+}
+
 div.theButtons button {
   margin: 0 1rem; 
   padding: .7rem 1rem;
@@ -145,9 +156,18 @@ div.grid section {
   overflow: hidden;
 }
 
-div.grid img:first-child {width: 100%; height: auto;}
-div.grid h3 {margin: .2rem 0;}
-div.grid p {margin: .2rem 0;}
+div.grid img:first-child {
+    width: 100%; 
+    height: auto;
+}
+
+div.grid h3 {
+    margin: .2rem 0;
+}
+
+div.grid p {
+    margin: .2rem 0;
+}
 
 /*LIST layout here*/
 div.list section {
@@ -164,4 +184,87 @@ div.list section {
 
 div.list img:first-child {
     display: none;
+}
+
+.hero {
+    max-width: 1200px;
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.hero a{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: block;
+    width: 100px;
+    text-align: center;
+    color: white;
+    border: solid 1px #000;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #2a384a;
+}
+
+section.ew {
+    margin: .5rem 10px;
+}
+
+section.ew div {
+    background-color: #eee;
+}
+
+section.ew h2 {
+    margin: 0;
+    background-color: var(--background-color);
+    color: white;
+    padding: 5px 10px;
+}
+
+div.events p{
+    margin: .75rem 10px
+}
+
+div.weather div{
+    display: flex;
+}
+
+div.weather p {
+    font-family: Verdana, sans-serif;
+    margin: .2rem 0;
+    font-size: .75rem;
+    color: #008b94;
+}
+
+#forecast p {
+    margin: .5rem 10px;
+    font-family: Verdana, sans-serif;
+    color: #008b94;
+}
+
+#spot div {
+    background-color: #eee;
+    text-align: center;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+}
+#spot h2 {
+    background-color: #f27d80;
+    margin: 0;
+    padding: .3rem 0;
+    font-size: 1.1rem;
+}
+#spot p {
+    margin: 0;
+    padding: .5rem;
+}
+#spot img {
+    width: 100px;
+    height: auto;
 }

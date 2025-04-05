@@ -29,6 +29,18 @@
         grid-template-rows: 1fr;
     }
 
+    section.ew {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        column-gap: 10px;
+    }
+
+    #spot {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+    }
+
     footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
