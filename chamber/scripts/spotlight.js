@@ -5,14 +5,13 @@ const path = './data/members.json';
 async function getMembers() {
   const response = await fetch(path);
   const data = await response.json();
-  //console.log(data.members);
-  //https://www.freecodecamp.org/news/filter-arrays-in-javascript/
   const payingmembers = data.members.filter(member => member.level > 1);
   //console.log(payingmembers);
   displayMembers(payingmembers)
 }
 
 getMembers();
+
   const displayMembers = (myArray) => {
     for (let step = 0; step < 3; step++) {
     const random = Math.floor(Math.random() * myArray.length);

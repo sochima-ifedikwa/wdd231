@@ -10,4 +10,3 @@ hambutton.addEventListener('click', () => {
     hambutton.classList.toggle('open');
 });
 
-date.textContent = date.las

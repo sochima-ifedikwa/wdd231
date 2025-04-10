@@ -41,6 +41,11 @@
         column-gap: 10px;
     }
 
+    .sbs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
