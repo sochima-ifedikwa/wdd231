@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you | Timbuktu Chamber of Commerce</title>
+    <meta name="description" content="Thank you for joining Timbuktu Chamber of Commerce">
+    <meta name="author" content="Sochima Ifedikwa">
+
+    <meta property="og:title" content="Join Us at Timbuktu Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sochima-ifedikwa.github.io/wdd231/chamber/join.html">
+    <meta property="og:image" content="https://sochima-ifedikwa.github.io/wdd231/chamber/images/hero.webp"> 
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/captureformdata.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <link rel="icon" href="favicon.ico">
+    
+</head>
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Timbuktu" width="70" height="59" >
+        <div>
+            <span>Timbuktu</span>
+            <div>Chamber of Commerce</div>
+        </div>
+        <button id="hamburger" aria-label="hamburger"></button>
+    </header>
+    <nav id="navbar">
+        <ul class="menuLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li class="active"><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Thanks</h1>
+        <p>We appreciate you interest in joining the chamber of commerce. Here are the details of your application.</p>
+      <div id="results"></div>
+    </main>
+    <footer>
+        <section class="address">
+            <p>Timbuktu Chamber of Commerce</p>
+            <p>10 Rue De La Paix</p>
+            <p>Timbuktu, Mali 99</p>
+            <p>info@timbuktucc.org</p>
+            <p>(223) 555-2300</p>
+        </section>
+        <section class="social">
+            <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="facebook" width="25" height="54"></a>
+            <a href="https://twitter.com"><img src="images/twitter.svg" alt="facebook" width="54" height="44"></a>
+            <a href="#"><img src="images/linked-in.svg" alt="facebook" width="44" height="44"></a>
+        </section>
+        <section>
+            <p>WDD231 Class Project</p>
+            <p>Sochima Ifedikwa</p>
+            <p>&copy;<span id="currentYear"></span> Timbuktu Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </section>
+    </footer>
+</body>
+</html>
