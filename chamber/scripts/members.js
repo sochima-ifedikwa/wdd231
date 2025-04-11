@@ -6,7 +6,7 @@ async function getMembers() {
   try {
       const response = await fetch(path);
       const data = await response.json();
-      console.log(data.members);
+      // console.log(data.members);
       displayMembers(data.members);
   } catch (error) {
       console.error('Error fetching members:', error);
