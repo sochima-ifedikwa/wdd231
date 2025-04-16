@@ -1,4 +1,9 @@
-/*----------- apply a natural box layout model to all elements --------------*/
+:root {
+    --background-color: #050517;
+    --primary-color: #EFC88B;
+}
+
+
 * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -6,7 +11,7 @@
   }
 
 body {
-    font-family: "Quicksand", sans-serif;
+    font-family: "Cormorant Upright", serif;
     font-weight: 300;
 }
 
@@ -14,7 +19,7 @@ header {
     display: grid;
     grid-template-columns: 60px auto 44px 44px;
     align-items: end;
-    background-color: #f5f5f7;
+    background-color: var(--background-color);
 }
 header .logo {
     padding: 5px 0 5px 10px;
@@ -23,7 +28,7 @@ header .logo {
 
 header span {
     font-weight: 700;
-    color: #366f5a;
+    color: var(--primary-color);
     font-size: 1.5rem;
     padding-left: 10px;
 }
@@ -31,7 +36,7 @@ header span {
 
 /************************** NAVIGATION **************************/
 nav {
-    background-color: #366f5a;
+    background-color: #280625;
 }
 nav ul {
     margin: 0;
@@ -39,7 +44,7 @@ nav ul {
     list-style: none;
 }
 nav ul li a {
-    color: #F4F1DE;
+    color: var(--primary-color);
     text-decoration: none;
     padding: .75rem;
     display: block;
@@ -47,7 +52,7 @@ nav ul li a {
     font-size: 1.2rem;
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
-nav ul li a:hover {color: #fff;}
+nav ul li a:hover {color: red;}
 nav ul li.active a {background-color: #1c2b4d;}
 
 
@@ -130,8 +135,9 @@ main.darkon h1, main.darkon h2, main.darkon p {
     align-items: center;
     font-size: 4rem;
     font-weight: 700;
-    color: #366f5a;
-    border: 2px solid #d9c757;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    border: 2px solid red;
     border-radius: 100%;
 }
 #solarsteps button, #solarstepsdialog button {
