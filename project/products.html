@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EverGreen Solutions | Home</title>
+    <title>EverGreen Solutions | Products</title>
     <meta name="description" content="Homepage for EverGreen Solutions">
     <meta name="author" content="sochima ifedikwa">
 
@@ -18,7 +18,7 @@
     <meta property="og:title" content="Homepage for EverGreen Solutions">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sochima-ifedikwa.github.io/wdd231/project/index.html">
-    <!-- <meta property="og:image" content=""> -->
+    <meta property="og:image" content="https://sochima-ifedikwa.github.io/wdd231/project/images/solar.webp">
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/darkmode.js" defer></script>
@@ -27,7 +27,7 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.png" class="logo" alt="logo" width="40" height="24">
+        <img src="images/logo.webp" class="logo" alt="logo" width="70" height="59">
         <span>EverGreen Solutions</span>
         <button id="dark" aria-label="dark mode"><img src="images/dark.svg" alt="dark mode"></button>
         <button id="hamburger" aria-label="navigation links"></button>
@@ -40,19 +40,17 @@
         </ul>
     </nav>
     <main>
-        <h1>Home</h1>
-        <p>Welcome to EverGreen Solutions! We are your one-stop shop for all things solar. We offer solar panels, inverters,
-            batteries, and more. We also offer installation services. Contact us today to learn more!</p>
-        <div id="solarsteps"></div>
-
-        <dialog id="solarstepsdialog">
-            <h2></h2>
-            <ul></ul>
-            <button id="close">Close</button>
-        </dialog>
+        <h1>Products</h1>
+        <div class="mybuttons">
+            <button id="all">All Products</button>
+            <button id="panels">Solar Panels</button>
+            <button id="inverters">Inverters</button>
+            <button id="battery">Batteries</button>
+        </div>
+        <div id="products"></div>
     </main>
     <footer>
-        
+        <p>&copy; <span id="currentyear"></span> Sochima Ifedikwa, Lubbock</p>
     </footer>
 
 </body>
