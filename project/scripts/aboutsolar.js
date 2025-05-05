@@ -1,4 +1,4 @@
-import { requirements } from '../data/steps.mjs'
+import { requirements } from '../data/steps.js'
 console.log(requirements)
 
 const showHere = document.querySelector('#solarsteps')
